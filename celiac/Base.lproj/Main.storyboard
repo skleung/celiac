@@ -162,7 +162,13 @@
                             <constraint firstItem="ZjG-md-FE4" firstAttribute="leading" secondItem="n4v-ka-pe3" secondAttribute="leading" id="vS9-hm-FI5"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" title="Weight" id="0cn-LY-2gc"/>
+                    <navigationItem key="navigationItem" title="Weight" id="0cn-LY-2gc">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="Brd-W1-m2P">
+                            <connections>
+                                <action selector="logout:" destination="Via-Vj-WJf" id="Q6j-H1-dSd"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="h6G-GC-2U6" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

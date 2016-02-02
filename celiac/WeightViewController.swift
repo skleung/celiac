@@ -40,4 +40,12 @@ class WeightViewController: UIViewController {
             }
         }
     }
+    
+    @IBAction func logout(sender: AnyObject) {
+        PFUser.logOutInBackgroundWithBlock { (err) -> Void in
+            if (err == nil) {
+                self.dismissViewControllerAnimated(true, completion: nil)
+            }
+        }
+    }
 }
