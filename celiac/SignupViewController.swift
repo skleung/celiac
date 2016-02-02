@@ -28,6 +28,7 @@ class SignupViewController: UIViewController {
                 self.dismissViewControllerAnimated(true, completion: nil)
             } else {
                 let alert = UIAlertController(title: "Signup Failed", message: nil, preferredStyle: .Alert)
+                alert.addAction(UIAlertAction(title: "OK", style: .Default, handler: nil))
                 self.presentViewController(alert, animated: true, completion: nil)
             }
         }
